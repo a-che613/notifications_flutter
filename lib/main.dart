@@ -76,185 +76,70 @@ class MyApp extends StatelessWidget {
             )
           ],
         ),
-        body: Container(
-          padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
-          child: Column(
-            children: [
-              Expanded(
-                flex: 0,
-                child: Material(
-                  elevation: 4,
-                  child: Container(
-                    padding: const EdgeInsets.all(8.0),
-                    color: Color.fromARGB(40, 76, 175, 79),
-                    child: Row(
-                    children: [
-                      const Image(
-                        image: AssetImage('images/avatar-mark-webber.webp'),
-                        height: 65,
-                      ),
-                      const SizedBox(width: 10,),
-                      Flex(
-                        direction: Axis.vertical,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
-                          Text('Mark webber reacted to your recent', style: TextStyle(fontSize: 17),),
-                          Text('post My first tournament!', style: TextStyle(fontSize: 17),),
-                          Text('1min ago', style: TextStyle(fontSize: 16),)
-                        ],
-                      ),
-                    ],
-                  )),
-                ),
+        body: Align(
+          alignment: Alignment.topLeft,
+          child: SingleChildScrollView(
+            child: Container(
+              padding: const EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+              child: Column(
+                children: const[
+                  NewNotification(
+                    image: 'images/IMG-20230310-WA0060.jpg', 
+                    message: 'choppyleo mentioned you on the card Che task2 on New_Project', 
+                    date: 'Apr 20 at 17:22'
+                  ),
+                  Padding(padding: EdgeInsets.fromLTRB(0, 10.0, 0, 10.0), child: Divider(height: 1.0, thickness: 1.0, color: Color.fromARGB(53, 158, 158, 158),)),
+                  NewNotification(
+                    image: 'images/IMG-20230228-WA0015.jpg', 
+                    message: 'A.che followed you!', 
+                    date: 'Apr 21 at 17:22'
+                  ),
+                  Padding(padding: EdgeInsets.fromLTRB(0, 10.0, 0, 10.0), child: Divider(height: 2.0, thickness: 2.0, color: Color.fromARGB(53, 158, 158, 158),)),
+                  NewNotification(
+                    image: 'images/IMG-20230323-WA0092.jpg', 
+                    message: 'A.che followed you!', 
+                    date: 'Apr 21 at 17:22'
+                  ),
+                  Padding(padding: EdgeInsets.fromLTRB(0, 10.0, 0, 10.0), child: Divider(height: 2.0, thickness: 2.0, color: Color.fromARGB(53, 158, 158, 158),)),
+                  NewNotification(
+                    image: 'images/IMG-20221112-WA0013.jpg', 
+                    message: 'A.che followed you!', 
+                    date: 'Apr 21 at 17:22'
+                  ),
+                  Padding(padding: EdgeInsets.fromLTRB(0, 10.0, 0, 10.0), child: Divider(height: 2.0, thickness: 2.0, color: Color.fromARGB(53, 158, 158, 158),)),
+                  NewNotification(
+                    image: 'images/IMG-20230228-WA0015.jpg', 
+                    message: 'A.che followed you!', 
+                    date: 'Apr 21 at 17:22'
+                  ),
+                  Padding(padding: EdgeInsets.fromLTRB(0, 10.0, 0, 10.0), child: Divider(height: 2.0, thickness: 2.0, color: Color.fromARGB(53, 158, 158, 158),)),
+                  NewNotification(
+                    image: 'images/IMG-20230310-WA0060.jpg', 
+                    message: 'A.che followed you!', 
+                    date: 'Apr 21 at 17:22'
+                  ),
+                  Padding(padding: EdgeInsets.fromLTRB(0, 10.0, 0, 10.0), child: Divider(height: 2.0, thickness: 2.0, color: Color.fromARGB(53, 158, 158, 158),)),
+                  NewNotification(
+                    image: 'images/IMG-20230323-WA0092.jpg', 
+                    message: 'A.che followed you!', 
+                    date: 'Apr 21 at 17:22'
+                  ),
+                  Padding(padding: EdgeInsets.fromLTRB(0, 10.0, 0, 10.0), child: Divider(height: 2.0, thickness: 2.0, color: Color.fromARGB(53, 158, 158, 158),)),
+                  NewNotification(
+                    image: 'images/IMG-20221112-WA0013.jpg', 
+                    message: 'A.che followed you!', 
+                    date: 'Apr 21 at 17:22'
+                  ),
+                  Padding(padding: EdgeInsets.fromLTRB(0, 10.0, 0, 10.0), child: Divider(height: 2.0, thickness: 2.0, color: Color.fromARGB(53, 158, 158, 158),)),
+                  NewNotification(
+                    image: 'images/IMG-20230228-WA0015.jpg', 
+                    message: 'A.che followed you!', 
+                    date: 'Apr 21 at 17:22'
+                  ),
+                  Padding(padding: EdgeInsets.fromLTRB(0, 10.0, 0, 10.0), child: Divider(height: 2.0, thickness: 2.0, color: Color.fromARGB(53, 158, 158, 158),))
+                ],
               ),
-              const SizedBox(height: 15,),
-              Expanded(
-                flex: 0,
-                child: Material(
-                  elevation: 4,
-                  child: Container(
-                    padding: const EdgeInsets.all(8.0),
-                    color: Color.fromARGB(40, 76, 175, 79),
-                    child: Row(
-                    children: [
-                      const Image(
-                        image: AssetImage('images/avatar-mark-webber.webp'),
-                        height: 65,
-                      ),
-                      const SizedBox(width: 10,),
-                      Flex(
-                        direction: Axis.vertical,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
-                          Text('Mark webber reacted to your recent', style: TextStyle(fontSize: 17),),
-                          Text('post My first tournament!', style: TextStyle(fontSize: 17),),
-                          Text('1min ago', style: TextStyle(fontSize: 16),)
-                        ],
-                      ),
-                    ],
-                  )),
-                ),
-              ),
-              const SizedBox(height: 15,),
-              Expanded(
-                flex: 0,
-                child: Material(
-                  elevation: 4,
-                  child: Container(
-                    padding: const EdgeInsets.all(8.0),
-                    color: Color.fromARGB(40, 76, 175, 79),
-                    child: Row(
-                    children: [
-                      const Image(
-                        image: AssetImage('images/avatar-mark-webber.webp'),
-                        height: 65,
-                      ),
-                      const SizedBox(width: 10,),
-                      Flex(
-                        direction: Axis.vertical,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
-                          Text('Mark webber reacted to your recent', style: TextStyle(fontSize: 17),),
-                          Text('post My first tournament!', style: TextStyle(fontSize: 17),),
-                          Text('1min ago', style: TextStyle(fontSize: 16),)
-                        ],
-                      ),
-                    ],
-                  )),
-                ),
-              ),
-              const SizedBox(height: 15,),
-              Expanded(
-                flex: 0,
-                child: Material(
-                  elevation: 4,
-                  child: Container(
-                    padding: const EdgeInsets.all(8.0),
-                    color: Color.fromARGB(40, 76, 175, 79),
-                    child: Row(
-                    children: [
-                      const Image(
-                        image: AssetImage('images/avatar-mark-webber.webp'),
-                        height: 65,
-                      ),
-                      const SizedBox(width: 10,),
-                      Flex(
-                        direction: Axis.vertical,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
-                          Text('Mark webber reacted to your recent', style: TextStyle(fontSize: 17),),
-                          Text('post My first tournament!', style: TextStyle(fontSize: 17),),
-                          Text('1min ago', style: TextStyle(fontSize: 16),)
-                        ],
-                      ),
-                    ],
-                  )),
-                ),
-              ),
-              const SizedBox(height: 15,),
-              Expanded(
-                flex: 0,
-                child: Material(
-                  elevation: 4,
-                  child: Container(
-                    padding: const EdgeInsets.all(8.0),
-                    color: Color.fromARGB(40, 76, 175, 79),
-                    child: Row(
-                    children: [
-                      const Image(
-                        image: AssetImage('images/avatar-mark-webber.webp'),
-                        height: 65,
-                      ),
-                      const SizedBox(width: 10,),
-                      Flex(
-                        direction: Axis.vertical,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
-                          Text('Mark webber reacted to your recent', style: TextStyle(fontSize: 17),),
-                          Text('post My first tournament!', style: TextStyle(fontSize: 17),),
-                          Text('1min ago', style: TextStyle(fontSize: 16),)
-                        ],
-                      ),
-                    ],
-                  )),
-                ),
-              ),
-              const SizedBox(height: 15,),
-              Expanded(
-                flex: 0,
-                child: Material(
-                  elevation: 4,
-                  child: Container(
-                    padding: const EdgeInsets.all(8.0),
-                    color: Color.fromARGB(40, 76, 175, 79),
-                    child: Row(
-                    children: [
-                      const Image(
-                        image: AssetImage('images/avatar-mark-webber.webp'),
-                        height: 65,
-                      ),
-                      const SizedBox(width: 10,),
-                      Flex(
-                        direction: Axis.vertical,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
-                          Text('Mark webber reacted to your recent', style: TextStyle(fontSize: 17),),
-                          Text('post My first tournament!', style: TextStyle(fontSize: 17),),
-                          Text('1min ago', style: TextStyle(fontSize: 16),)
-                        ],
-                      ),
-                    ],
-                  )),
-                ),
-              ),
-              
-            ],
+            ),
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(currentIndex: 2, items: const [
@@ -264,6 +149,44 @@ class MyApp extends StatelessWidget {
               icon: Icon(Icons.notifications, size: 28,), label: 'Notifications')
         ]),
       ),
+    );
+  }
+}
+
+class NewNotification extends StatelessWidget {
+  final String image;
+  final String message;
+  final String date;
+  const NewNotification({
+    super.key, required this.image, required this.message, required this.date
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Flex(
+      direction: Axis.horizontal,
+      children: [
+       CircleAvatar(
+          radius: 30,
+          backgroundImage: AssetImage(image),
+        ),
+        const SizedBox(width: 10,),
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                message,
+                style: const TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold
+                ),
+              ),
+              Text(date)
+            ],
+          ),
+        ),
+      ],
     );
   }
 }
